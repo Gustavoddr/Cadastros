@@ -1,69 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 * {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
     border: 0;
-    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
     background: #1B2029;
     color: white;
+    font-weight: 500;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vh;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
-.main {
-    width: 50vh;
+main {
+    width: 50vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
-.main h1 {
+main h1 {
     color: #8880FE;
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;
 }
 
-main .midias-sociais {
+main.social-media {
     display: flex;
     align-content: center;
-
 }
 
-main .midias-sociais a {
+main .social-media a {
     text-decoration: none;
 }
 
-main .midias-sociais img {
+main .social-media img {
     width: 36px;
     margin-left: 3rem;
 }
 
-main .midias-sociais a:first-child img {
+main .social-media a:first-child img {
     margin-left: 0;
 }
 
-main .alternativo {
+main .alternative {
     margin-top: 1rem;
 }
 
-main .alternativo span {
+main .alternative span {
     font-size: 1.1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.3);
     position: relative;
 }
 
-main .alternativo span::before, main .alternativo span::after {
+main .alternative span::before, main .alternative span::after {
     position: absolute;
     content: '';
     height: 1px;
@@ -73,7 +71,7 @@ main .alternativo span::before, main .alternativo span::after {
     background: rgba(255, 255, 255, 0.3);
 }
 
-main .alternativo span::after {
+main .alternative span::after {
     left: 50px;
 }
 
@@ -134,7 +132,7 @@ section.images img {
     width: 100%;
 }
 
-section.images .circulo {
+section.images .circle {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -150,7 +148,7 @@ section.images .circulo {
         width: 110%;
     }
 
-    section.images .circulo {
+    section.images .circle {
         clip-path: circle(35% at right 80%);
     }
 }
@@ -171,7 +169,7 @@ section.images .circulo {
         font-size: 2rem;
     }
 
-    main .alternativo span {
+    main .alternative span {
         font-size: 0.8rem;
     }
 
